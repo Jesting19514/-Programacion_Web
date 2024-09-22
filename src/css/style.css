@@ -1,23 +1,96 @@
-
-body {
+* {
     margin: 0;
     padding: 0;
-    display: flex;
-    height: 100vh;
-    background-color: #3d3b3a;
+    box-sizing: border-box;
 }
 
-.sidebar {
-    width: 100%;
-    height: 20%;
-    background: linear-gradient(60deg, #030303, #1a1d1d);
-    padding: 20px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
 }
-.content {
+
+#hero {
+    background: url('/assets/imgs/delfin.jpg') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+#hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    z-index: 1;
+}
+
+#hero h2 {
+    font-size: 4em;
+    font-weight: bold;
+    z-index: 1;
+}
+
+#hero p {
+    font-size: 1.5em;
+    z-index: 1;
+}
+
+#about, #photos, #contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about h2, #photos h2, #contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.photo-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.photo-gallery img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#contact p {
+    font-size: 1.2em;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+body, html {
+    scroll-behavior: smooth;
 }
