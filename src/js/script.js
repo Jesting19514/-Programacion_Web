@@ -8,3 +8,9 @@ window.onscroll = function() {
         window.scrollTo(0, maxScroll);
     }
 };
+
+
+window.onload = function() {
+    const video = document.getElementById('background-video');
+    video.volume = 0.01;  // Cambia este valor según el volumen deseado
+};
