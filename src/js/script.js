@@ -12,5 +12,9 @@ window.onscroll = function() {
 
 window.onload = function() {
     const video = document.getElementById('background-video');
-    video.volume = 0.01;  // Cambia este valor según el volumen deseado
+    video.volume = 0.01;  
+
+    video.addEventListener('canplaythrough', function() {
+        video.play();
+    }, false);
 };
