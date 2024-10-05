@@ -17,4 +17,16 @@ window.onload = function() {
     video.addEventListener('canplaythrough', function() {
         video.play();
     }, false);
+
+    // Añadir evento click a las imágenes para reproducir el sonido
+    const images = document.querySelectorAll('.sound-image');
+    const sound = new Audio('../../assets/sfx/delfin.mp3'); // Archivo de sonido
+
+    images.forEach(image => {
+        image.addEventListener('click', () => {
+            sound.play();  // Reproducir sonido al hacer clic en la imagen
+        });
+    });
 };
+
+

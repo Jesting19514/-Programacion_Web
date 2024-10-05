@@ -85,6 +85,18 @@ body {
     text-align: center;
     color: white;
     font-size: 300%;
+    
+}
+
+.content-overlay h1 {
+    color: white;
+    font-size: 100%;
+    text-shadow: black 5px 5px 5px;
+}
+.content-overlay h2 {
+    color: white;
+    font-size: 100%;
+    text-shadow: black 5px 5px 5px;
 }
 
 
