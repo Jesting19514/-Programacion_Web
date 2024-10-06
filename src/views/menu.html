@@ -1,12 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    EN TRABAJO LOL
+    <link rel="stylesheet" href="../css/menu.css">
+    <title>Menú de Cafetería</title>
 </head>
 <body>
-    
+    <nav class="navbar">
+        <ul>
+            <li><a href="view.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+        </ul>
+    </nav>
+    <div class="menu-container">
+        <h1>Menú de Cafetería</h1>
+        <div class="menu-items">
+            <div class="menu-item" onclick="showImage('cafe')">
+                <img class="sound-image" src="../../assets/imgs/delfin.jpg" alt="Café" id="cafe">
+                <h2>Café</h2>
+                <p>Delicioso café recién hecho</p>
+                <p class="price">$2.50</p>
+            </div>
+            <div class="menu-item" onclick="showImage('te')">
+                <img src="https://via.placeholder.com/150" alt="Té" id="te">
+                <h2>Té</h2>
+                <p>Refrescante té de hierbas</p>
+                <p class="price">$2.00</p>
+            </div>
+            <div class="menu-item" onclick="showImage('pastel')">
+                <img src="https://via.placeholder.com/150" alt="Pastel" id="pastel">
+                <h2>Pastel</h2>
+                <p>Pastel de chocolate delicioso</p>
+                <p class="price">$3.00</p>
+            </div>
+            <!-- Puedes añadir más elementos aquí -->
+            <div class="menu-item" onclick="showImage('cafe')">
+                <img src="../../assets/imgs/img1.jpg" alt="Café" id="cafe">
+                <h2>Café</h2>
+                <p>Delicioso café recién hecho</p>
+                <p class="price">$2.50</p>
+            </div>
+            <div class="menu-item" onclick="showImage('te')">
+                <img src="https://via.placeholder.com/150" alt="Té" id="te">
+                <h2>Té</h2>
+                <p>Refrescante té de hierbas</p>
+                <p class="price">$2.00</p>
+            </div>
+            <div class="menu-item" onclick="showImage('pastel')">
+                <img src="https://via.placeholder.com/150" alt="Pastel" id="pastel">
+                <h2>Pastel</h2>
+                <p>Pastel de chocolate delicioso</p>
+                <p class="price">$3.00</p>
+            </div>
+            <div class="menu-item" onclick="showImage('cafe')">
+                <img src="../../assets/imgs/img1.jpg" alt="Café" id="cafe">
+                <h2>Café</h2>
+                <p>Delicioso café recién hecho</p>
+                <p class="price">$2.50</p>
+            </div>
+            <div class="menu-item" onclick="showImage('te')">
+                <img src="https://via.placeholder.com/150" alt="Té" id="te">
+                <h2>Té</h2>
+                <p>Refrescante té de hierbas</p>
+                <p class="price">$2.00</p>
+            </div>
+            <div class="menu-item" onclick="showImage('pastel')">
+                <img src="https://via.placeholder.com/150" alt="Pastel" id="pastel">
+                <h2>Pastel</h2>
+                <p>Pastel de chocolate delicioso</p>
+                <p class="price">$3.00</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para imagen ampliada -->
+    <div id="image-modal" class="modal" onclick="closeModal()">
+        <img id="modal-image" src="" alt="Imagen Ampliada">
+    </div>
+
+    <script src="../js/script.js"></script>
 </body>
 </html>
